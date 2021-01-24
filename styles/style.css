@@ -1,0 +1,593 @@
+/*pobieranie czcionki z google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&subset=latin-ext');
+
+/*reset domyślnych styli oraz ustawienie box-sizingu aby paddingi i bordery nie były wliczane do wymiarów*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+
+
+header{
+    color: #fff;
+    background-color: #000;
+}
+
+/*zdefiniowany clearfix*/
+
+.row::before, .row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*definicja szerokości głównej zawartości strony*/
+.container{
+    width: 1050px;
+    margin: 0 auto;
+}
+
+/*sekcja ul w headerze*/
+
+.headerMenu{
+    float: right;
+    list-style-type: none;
+}
+
+ul.headerMenu li{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.headerMenu li:hover{
+    background-color: #1a1a1a;
+}
+
+/*paragraf z logo w headerze*/
+
+.logo{
+    float: left;
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+    font-weight: 700;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+/*zielony wyraz w logo w headerze*/
+.greenFont{
+    color: #27C7AD;
+}
+
+/*definicja 2 kolumn na całej szerokości dokumentu*/
+.column-2{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+/*sekcja slider - ustawienie odsuniecia od gory i dolu*/
+
+.slider{
+    padding: 100px 0 100px 0;
+    /*ponizej wygenerowany gradient*/
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(186,186,214,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(186,186,214,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(186,186,214,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(186,186,214,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(186,186,214,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(186,186,214,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#babad6', GradientType=0 );
+}
+
+/*grafika krzesła nad gradientem, ktora jest powiekszona */
+
+.chairImage{
+    /*background-image: url("../images/black_chair.png");*/
+    background-image: url("../images/black_chair.png");
+    width: 470px;
+    height: 337px;
+}
+
+h1{
+    font-size: 40px;
+    padding-top: 20px;
+    line-height: 100px;
+}
+
+.column-2Text{
+    word-spacing: 2px;
+
+}
+
+/*stylizacja pseudo przycisku*/
+
+.fakeButton{
+    text-decoration: none;
+    display: block;
+    width: 300px;
+    height: 60px;
+    background-color: #27C7AD;
+    margin: 20px auto 0px auto;
+    color: #fff;
+    line-height: 60px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.fakeButton:hover{
+    margin: 21px auto 0px auto;
+}
+
+/*definicja 3 kolumn na całej szerokości dokumentu*/
+.column-3{
+    width: 33.333%;
+    float: left;
+    text-align: center;
+}
+
+/*wstawianie zdjęć do boksów*/
+
+div .box1{
+    background-image: url("../images/box1_img.jpg");
+    margin: 20px 10px 20px 10px;
+    height: 225px;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    position: relative;
+
+}
+
+div .box2{
+    background-image: url("../images/box2_img.jpg");
+    margin: 20px 10px 20px 10px;
+    height: 225px;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    position: relative;
+
+}
+
+div .box3{
+    width: 100%;
+    height: 250px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px;
+
+}
+
+/*zmiana opacity przy najechaniu kursorem na obrazki*/
+
+div .box1:hover{
+    background-image: url("../images/box1_img.jpg");
+    margin: 20px 10px 20px 10px;
+    height: 225px;
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+div .box2:hover{
+    background-image: url("../images/box2_img.jpg");
+    margin: 20px 10px 20px 10px;
+    height: 225px;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+/*klasa nadająca 20 px paddingu*/
+
+.padding20px{
+    padding: 20px 10px 20px 10px;
+}
+
+.container005{
+    width: 5%;
+    float: left;
+    margin-top: 100px;
+    line-height: 100px;
+    color: #27C7AD;
+    font-size: 80px;
+    font-weight: 400;
+    text-align: right;
+    cursor: pointer;
+}
+
+.container09{
+    width: 90%;
+    float: left;
+    text-align: center;
+}
+
+h2{
+    padding: 10px 0;
+    position: relative;
+    display: block;
+    font-size: 18px;
+}
+
+/*zielona linia pod nagłówkiem h2*/
+
+h2::after{
+    content: '';
+    width: 180px;
+    height: 10px;
+    background-color: #27C7AD;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.box3 p{
+
+    font-size: 15px;
+    padding-top: 12px;
+}
+.boxInside{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 10px;
+    background-color: rgba(211, 211, 211, 0.7);
+    text-align: left;
+    line-height: 60px;
+    padding-left: 10px;
+    font-weight: 700;
+    color: black;
+}
+
+
+.boxInside::after{
+    content: '';
+    width: 150px;
+    height: 10px;
+    background-color: #27C7AD;
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+}
+
+section.chairs{
+ padding-bottom: 50px;
+}
+
+/*definicja sekcji cennik*/
+/*1) definicja koloru tła*/
+.pricelist{
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 65px;
+}
+
+.pricelistHeader{
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    padding: 20px 0 20px 0;
+}
+
+.pricelistHeader::after {
+    content: '';
+    width: 300px;
+    height: 10px;
+    background-color: #27C7AD;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+
+}
+
+/*prostokąt z kółkami*/
+
+.rectangle{
+    padding: 20px 0 10px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 330px;
+    height: 500px;
+    border: 1px solid rgb(194, 194, 194);
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    color: rgb(194,194,194);
+    margin-top: 60px;
+    background-color: #f9f9f9;
+}
+
+.circle
+{
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(194,194,194);
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 135px;
+    z-index: 2;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+
+.black
+{
+    border: 3px solid rgb(194, 194, 194);
+    width: 30px;
+    height: 30px;
+    background-color: rgb(194, 194, 194);
+    z-index: 3;
+    top: -15px;
+    left: 150px;
+}
+
+/*kółko z ceną w CENNIKu*/
+
+.priceCircle{
+    background-color: #fff;
+    width: 130px;
+    height: 130px;
+    margin: 20px auto;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 50%;
+ padding-top: 25px;
+    font-weight: 400;
+
+}
+
+.priceCircle span
+{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h3{
+    color: #27C7AD;
+    font-weight: 400;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.pricelistButton {
+    background-color: #27C7AD;
+    width: 120px;
+    display: block;
+    margin: 120px auto 0 auto;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+ol{
+    list-style-type: none;
+    font-size: 25px;
+    line-height: 25px;
+    width: 100%;
+    color: rgb(165, 165, 165);
+    background-color: #E4E4E4;
+}
+ol li{
+    padding: 8px 0 8px 0;
+}
+
+ol li:nth-of-type(2n){
+    background-color: #f1f1f1;
+    color: #777;
+}
+
+.advancePlan .pricelistButton{
+    margin: 37px auto 0 auto;
+}
+/*deklaracja środkowego diva z cennika na kolory zielone*/
+
+.standardPlan .priceCircle{
+    color: #27C7AD;
+    background-color: #fff;
+}
+
+
+.standardPlan .circle{
+    border: 1px solid #27C7AD;
+    color: red;
+    background-color: #27C7AD;
+}
+
+.standardPlan .circle + div{
+    background-color: #fff;
+}
+div.standardPlan {
+    background-color: #27C7AD;
+}
+
+.standardPlan h3{
+    color: #fff;
+}
+
+a.standardPlan {
+    background-color: #fff;
+    color: #27C7AD;
+    margin: 80px auto 0 auto;
+}
+
+.standardPlan ol{
+    background-color: #fff;
+    color: #a5a5a5;
+}
+
+
+/*deklaracja dwóch kolumn o szerokości 70 % i 30% z sekcji kontakt z formularzem i przyciskiem oraz rysunkiem fotela oraz fake checkboksem.*/
+.column07{
+    width: 70%;
+    float: left;
+    text-align: center;
+    background-color: #fff;
+}
+
+.column03{
+    width: 30%;
+    float: left;
+    text-align: center;
+    background-color: #fff;
+}
+
+/*definicja obrazka czerownego krzesła jako background image*/
+
+span.redChair{
+    background-image: url("../images/red_chair.png");
+    width: 264px;
+    height: 210px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+form{
+    padding: 10px;
+}
+#name, #email, #message{
+    width: 635px;
+    padding: 2px 2px 2px 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+    font-weight: 400;
+    height: 66px;
+    line-height: 66px;
+    color: #d2d2d2;
+    border: 1px solid #27C7AD;
+}
+#name::-webkit-input-placeholder{
+    color: #d0d0d0;
+}
+#name::-moz-placeholder{
+    color: #d0d0d0;
+}
+#email::-webkit-input-placeholder {
+    color: #d0d0d0;
+}
+#email::-moz-placeholder{
+     color: #d0d0d0;
+ }
+#message::-webkit-input-placeholder {
+    color: #d0d0d0;
+}
+#message::-moz-placeholder{
+     color: #d0d0d0;
+ }
+
+#message{
+    height: 188px;
+    resize: none;
+}
+
+.form{
+    margin-left: 0;
+    text-align: left;
+}
+
+p.checkboxAgree{
+    color: #d0d0d0;
+}
+
+
+
+.column08{
+    width: 80%;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.column02{
+    width: 18%;
+    float: left;
+    border: 1px solid #27C7AD;
+    margin: 0 auto;
+}
+
+.column03 .fakeButton{
+   margin-top: 35px;
+}
+
+
+/*CSS DLA CHECKBOKSA O ZMODYFIKOWANYM WYGLADZIE*/
+
+.checkbox {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.checkbox span{
+    width: 100%;
+    height: 40px;
+    display: block;
+}
+
+
+.checkbox [type="checkbox"]{
+    position: absolute;
+    display: none;
+    visibility: hidden;
+}
+
+.checkbox [type="checkbox"]:checked + span{
+    background-image: url(../images/form_ok.jpg);
+}
+
+footer{
+    color: #a2a2a2;
+    padding: 50px 0 40px 0;
+}
+
+footer .column07{
+    text-align: left;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+/*deklaracja miniaturek do serwisów społecznościowych*/
+
+.icons div{
+    width: 35px;
+    height: 35px;
+    margin-left: 1.5px;
+
+}
+
+
+div.flickr{
+    background-image: url("../images/flickr.png");
+
+}
+
+div.vimeo{
+    background-image: url("../images/vimeo.png");
+
+}
+
+div.pinterest{
+    background-image: url("../images/pinterest.png");
+
+}
+
+div.twitter{
+    background-image: url("../images/twitter.png");
+}
+
+.logofooter{
+    text-align: right;
+  padding-left: 20px;
+
+}
